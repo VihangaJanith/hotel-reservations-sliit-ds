@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/apis" name="apis" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/getallorder">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="getall"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/placeorder">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="placeorder"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/getuserorders">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="getuserorders"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/deliverorder">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="deliverorder"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/getorderbyid">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="getorderbyid"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/deleteorder">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="deleteorder"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

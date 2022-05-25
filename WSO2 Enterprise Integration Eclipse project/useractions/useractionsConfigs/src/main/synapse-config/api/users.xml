@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/users" name="users" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="POST" url-mapping="/userRegister">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to User Service"/>
+            </log>
+            <send>
+                <endpoint key="userRegister"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/userLogin">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to User Service"/>
+            </log>
+            <send>
+                <endpoint key="userLogin"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="GET" url-mapping="/getUsers">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to User Service"/>
+            </log>
+            <send>
+                <endpoint key="getUsers"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/deleteUser">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to User Service"/>
+            </log>
+            <send>
+                <endpoint key="deleteUser"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/makeHotelAdmin">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to User Service"/>
+            </log>
+            <send>
+                <endpoint key="makeHotelAdmin"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/removeHotelAdmin">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to User Service"/>
+            </log>
+            <send>
+                <endpoint key="removeHotelAdmin"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

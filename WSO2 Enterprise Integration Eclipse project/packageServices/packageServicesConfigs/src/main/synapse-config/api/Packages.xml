@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/packages" name="Packages" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/getpackages">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to get products"/>
+            </log>
+            <send>
+                <endpoint key="getPackages"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/addpackage">
+        <inSequence>
+            <log>
+                <property name="Message" value="welcome to add packages"/>
+            </log>
+            <send>
+                <endpoint key="AddPackage"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/getpackagebyid">
+        <inSequence>
+            <log>
+                <property name="Messsage" value="Welcome to getpack by id"/>
+            </log>
+            <send>
+                <endpoint key="getPackageByID"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/editpackage">
+        <inSequence>
+            <log>
+                <property name="Message" value="Welcome to edit package"/>
+            </log>
+            <send>
+                <endpoint key="editPackage"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/deletepackage">
+        <inSequence>
+            <log>
+                <property name="Message" value="welcome to delete package"/>
+            </log>
+            <send>
+                <endpoint key="DeletePackage"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/adddd">
+        <inSequence>
+            <log>
+                <property name="s" value="sss"/>
+            </log>
+            <send>
+                <endpoint key="AddPackage"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/editbyid">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="EditPackagesR"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

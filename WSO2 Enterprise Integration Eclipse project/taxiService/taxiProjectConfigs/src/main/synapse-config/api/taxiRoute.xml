@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/taxiroute" name="taxiRoute" xmlns="http://ws.apache.org/ns/synapse">
+    <resource methods="GET" url-mapping="/getall">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="getall"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/booktaxi">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="booktaxi"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/taxidelete">
+        <inSequence>
+            <log/>
+            <send>
+                <endpoint key="deletetaxi"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+    <resource methods="POST" url-mapping="/orderedtaxi">
+        <inSequence>
+            <log description="&#xd;&#xa;"/>
+            <send>
+                <endpoint key="orderedTaxi"/>
+            </send>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </resource>
+</api>

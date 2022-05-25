@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Akshar', sans-serif  !important;
+  background-color: #BDD1AE !important;
+
+  background: url(data:image/jpeg;base64,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) no-repeat fixed 0 0;
+  background-size: cover;
+    position: relative;
+    text-shadow: none!important;
+    color: #555;
+  
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow:0 0 0 50px black inset; /* Change the color to your own background color */
+  -webkit-text-fill-color: white;
+}
+
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: /*your box-shadow*/,0 0 0 50px black inset;
+  -webkit-text-fill-color: white;
+}  
+
+
+
+
+
+
+.overlay {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  font-size: 20px !important;
+}
+
+.flex-container{
+  display: flex !important;
+ 
+}
+.btn{
+ border-radius: 10px !important;
+}
+
+
+
+.bt{
+  background-color: red !important;
+  color: #fff !important;
+  width: 200px !important;
+  border-radius: 3px !important;
+  border: none;
+  color: white;
+  padding: 5px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+select{
+  box-shadow: none !important;
+  border-color:  black !important;  
+
+}
+
+.fa-plus{
+  color:green;
+  margin: 5px;
+}
+
+.fa-minus{
+  color:red;
+  margin: 5px;
+}
+.fa-trash{
+  color:red;
+  margin: 5px;
+}
+input{
+  border-radius: 10px !important;
+  padding: 0 10px;
+  margin-top: 0.4em !important;
+ 
+  box-shadow: none !important;
+  
+} 
+input[type=text]:focus {
+ 
+  border: 2px solid orangered;
+  
+  color: black
+}
+
+td , th ,tr{
+ text-align: left;
+}
+
+.map-container{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/* ///////////// */
