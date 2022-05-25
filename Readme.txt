@@ -1,3 +1,6 @@
+This is a Hotel Reservation Sytsem build using MERN stack and WSO2 Enterprise Integrator
+
+
 Steps
 1) Run npm install in the terminals of all services separately.
 2) Run nodemon server in the terminal of all services separately.
